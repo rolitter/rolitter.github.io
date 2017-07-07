@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://rolitter.github.io/"/>
-  <updated>2017-07-07T08:33:22.619Z</updated>
+  <updated>2017-07-07T08:26:02.337Z</updated>
   <id>https://rolitter.github.io/</id>
   
   <author>
@@ -14,20 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>hexo</title>
-    <link href="https://rolitter.github.io/2017/07/07/hexo-1/"/>
-    <id>https://rolitter.github.io/2017/07/07/hexo-1/</id>
-    <published>2017-07-07T08:33:22.000Z</published>
-    <updated>2017-07-07T08:33:22.619Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>vue使用方法</title>
@@ -178,11 +164,11 @@
     </summary>
     
     
+      <category term="随笔" scheme="https://rolitter.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
       <category term="技术" scheme="https://rolitter.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
     
       <category term="科技" scheme="https://rolitter.github.io/tags/%E7%A7%91%E6%8A%80/"/>
-    
-      <category term="随笔" scheme="https://rolitter.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
     
       <category term="vue" scheme="https://rolitter.github.io/tags/vue/"/>
     
@@ -341,11 +327,11 @@
     </summary>
     
     
+      <category term="随笔" scheme="https://rolitter.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
       <category term="技术" scheme="https://rolitter.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
     
       <category term="科技" scheme="https://rolitter.github.io/tags/%E7%A7%91%E6%8A%80/"/>
-    
-      <category term="随笔" scheme="https://rolitter.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
     
       <category term="vue-en" scheme="https://rolitter.github.io/tags/vue-en/"/>
     
@@ -410,11 +396,11 @@
     </summary>
     
     
+      <category term="随笔" scheme="https://rolitter.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
       <category term="技术" scheme="https://rolitter.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
     
       <category term="科技" scheme="https://rolitter.github.io/tags/%E7%A7%91%E6%8A%80/"/>
-    
-      <category term="随笔" scheme="https://rolitter.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
     
       <category term="hexo" scheme="https://rolitter.github.io/tags/hexo/"/>
     
