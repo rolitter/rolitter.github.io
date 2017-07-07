@@ -382,7 +382,7 @@
     <link href="https://rolitter.github.io/2017/07/06/hexo/"/>
     <id>https://rolitter.github.io/2017/07/06/hexo/</id>
     <published>2017-07-06T08:18:18.911Z</published>
-    <updated>2017-07-07T08:24:16.042Z</updated>
+    <updated>2017-07-07T09:42:10.538Z</updated>
     
     <content type="html"><![CDATA[<p><i class="icon icon-book icon-lg"></i><br>hexo命令</p>
 <h2 id="简写"><a href="#简写" class="headerlink" title="简写"></a>简写</h2><h3 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo n <span class="string">"My New Post"</span>==hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
