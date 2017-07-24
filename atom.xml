@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://rolitter.github.io/"/>
-  <updated>2017-07-07T08:26:02.337Z</updated>
+  <updated>2017-07-24T11:02:07.913Z</updated>
   <id>https://rolitter.github.io/</id>
   
   <author>
@@ -14,6 +14,43 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ele</title>
+    <link href="https://rolitter.github.io/2017/07/24/element/"/>
+    <id>https://rolitter.github.io/2017/07/24/element/</id>
+    <published>2017-07-24T11:01:15.866Z</published>
+    <updated>2017-07-24T11:02:07.913Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+    
+    </summary>
+    
+      <category term="Hexo�̳�" scheme="https://rolitter.github.io/categories/Hexo%EF%BF%BD%CC%B3%EF%BF%BD/"/>
+    
+    
+      <category term="����" scheme="https://rolitter.github.io/tags/%EF%BF%BD%EF%BF%BD%EF%BF%BD%EF%BF%BD/"/>
+    
+      <category term="�Ƽ�" scheme="https://rolitter.github.io/tags/%EF%BF%BD%C6%BC%EF%BF%BD/"/>
+    
+      <category term="vue" scheme="https://rolitter.github.io/tags/vue/"/>
+    
+      <category term="ele" scheme="https://rolitter.github.io/tags/ele/"/>
+    
+  </entry>
   
   <entry>
     <title>vue使用方法</title>
@@ -164,13 +201,13 @@
     </summary>
     
     
+      <category term="vue" scheme="https://rolitter.github.io/tags/vue/"/>
+    
       <category term="技术" scheme="https://rolitter.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
     
       <category term="科技" scheme="https://rolitter.github.io/tags/%E7%A7%91%E6%8A%80/"/>
     
       <category term="随笔" scheme="https://rolitter.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
-    
-      <category term="vue" scheme="https://rolitter.github.io/tags/vue/"/>
     
   </entry>
   
@@ -179,7 +216,7 @@
     <link href="https://rolitter.github.io/2017/07/07/README-en/"/>
     <id>https://rolitter.github.io/2017/07/07/README-en/</id>
     <published>2017-07-07T03:00:03.015Z</published>
-    <updated>2017-07-07T08:27:03.097Z</updated>
+    <updated>2017-07-07T08:27:03.098Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h2><blockquote>
 <p>In the past half year, I have been building a backend for management dashboard using Vue. Though the backend has contained greater than 70 pages and over 10 permissions, it still takes insignificant effort to maintain the project. So I decide to make it open source so as to share my development experience and progress on backend. The tech stack is mainly <a href="https://github.com/vuejs/vue" target="_blank" rel="external">Vue.js</a>+<a href="https://github.com/ElemeFE/element" target="_blank" rel="external">Element</a>+<a href="https://github.com/mzabriskie/axios" target="_blank" rel="external">axios</a>. Since it’s a personal project, all data requests are simulated with <a href="https://github.com/nuysoft/Mock" target="_blank" rel="external">Mock.js</a>. <strong>Note:</strong> if anyone wants to modify or develop based on this project, please remove the mock files.</p>
