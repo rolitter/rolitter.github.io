@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>vue使用方法 | rolitter&#39;s Blog | a little bear</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#20a0ff">
+    
+    
+    <meta name="keywords" content="技术,科技,随笔,vue">
+    <meta name="description" content="vue-element-admin线上地址 English Document wiki 注意：该项目目前使用element-ui@1.3.3版本,所以最低兼容 Vue 2.3.0 前言 这半年来一直在用vue写管理后台，目前后台已经有百来个个页面，十几种权限，但维护成本依然很低，所以准备开源分享一下后台开发的经验和成果。目前的技术栈主要的采用vue+element+axios由webpack2打包">
+<meta name="keywords" content="技术,科技,随笔,vue">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vue使用方法">
+<meta property="og:url" content="https://rolitter.github.io/2017/07/07/vue/index.html">
+<meta property="og:site_name" content="rolitter&#39;s Blog">
+<meta property="og:description" content="vue-element-admin线上地址 English Document wiki 注意：该项目目前使用element-ui@1.3.3版本,所以最低兼容 Vue 2.3.0 前言 这半年来一直在用vue写管理后台，目前后台已经有百来个个页面，十几种权限，但维护成本依然很低，所以准备开源分享一下后台开发的经验和成果。目前的技术栈主要的采用vue+element+axios由webpack2打包">
+<meta property="og:image" content="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/2login.gif">
+<meta property="og:image" content="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/theme.gif">
+<meta property="og:image" content="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/leftmenu.gif">
+<meta property="og:image" content="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/order.gif">
+<meta property="og:image" content="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/dynamictable.gif">
+<meta property="og:image" content="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/uploadAvatar.gif">
+<meta property="og:image" content="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/errorlog.gif">
+<meta property="og:image" content="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/editor.gif">
+<meta property="og:image" content="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/table.gif">
+<meta property="og:image" content="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/echarts.gif">
+<meta property="og:image" content="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/excel.png">
+<meta property="og:updated_time" content="2017-07-07T08:26:02.337Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="vue使用方法">
+<meta name="twitter:description" content="vue-element-admin线上地址 English Document wiki 注意：该项目目前使用element-ui@1.3.3版本,所以最低兼容 Vue 2.3.0 前言 这半年来一直在用vue写管理后台，目前后台已经有百来个个页面，十几种权限，但维护成本依然很低，所以准备开源分享一下后台开发的经验和成果。目前的技术栈主要的采用vue+element+axios由webpack2打包">
+<meta name="twitter:image" content="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/2login.gif">
+    
+        <link rel="alternate" type="application/atom+xml" title="rolitter&#39;s Blog" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/img/rolitter.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.6.10">
+    <script>window.lazyScripts=[]</script>
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.png)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/rolitter.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">rolitter</h5>
+          <a href="mailto:rolitter@gmail.com" title="rolitter@gmail.com" class="mail">rolitter@gmail.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                文章
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/rolitter" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">vue使用方法</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">vue使用方法</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-07-07T03:00:05.386Z" itemprop="datePublished" class="page-time">
+  2017-07-07
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#vue-element-admin"><span class="post-toc-number">1.</span> <span class="post-toc-text">vue-element-admin</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#前言"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">前言</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#功能"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">功能</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#开发"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">开发</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#发布"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">发布</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#目录结构"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">目录结构</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Changelog"><span class="post-toc-number">1.6.</span> <span class="post-toc-text">Changelog</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#状态管理"><span class="post-toc-number">1.7.</span> <span class="post-toc-text">状态管理</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#效果图"><span class="post-toc-number">1.8.</span> <span class="post-toc-text">效果图</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#两步验证登录-支持微信和qq"><span class="post-toc-number">1.8.0.1.</span> <span class="post-toc-text">两步验证登录 支持微信和qq</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#真正的动态换肤"><span class="post-toc-number">1.8.0.2.</span> <span class="post-toc-text">真正的动态换肤</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#table拖拽排序"><span class="post-toc-number">1.8.0.3.</span> <span class="post-toc-text">table拖拽排序</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#动态table"><span class="post-toc-number">1.8.0.4.</span> <span class="post-toc-text">动态table</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#上传裁剪头像"><span class="post-toc-number">1.8.0.5.</span> <span class="post-toc-text">上传裁剪头像</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#错误统计"><span class="post-toc-number">1.8.0.6.</span> <span class="post-toc-text">错误统计</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#富文本-整合七牛-打水印等个性化功能"><span class="post-toc-number">1.8.0.7.</span> <span class="post-toc-text">富文本(整合七牛 打水印等个性化功能)</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#封装table组件"><span class="post-toc-number">1.8.0.8.</span> <span class="post-toc-text">封装table组件</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#图表"><span class="post-toc-number">1.8.0.9.</span> <span class="post-toc-text">图表</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#导出excel"><span class="post-toc-number">1.8.0.10.</span> <span class="post-toc-text">导出excel</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#更多demo"><span class="post-toc-number">1.9.</span> <span class="post-toc-text">更多demo</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-vue"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">vue使用方法</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017-07-07 11:00:05" datetime="2017-07-07T03:00:05.386Z"  itemprop="datePublished">2017-07-07</time>
+
+            
+
+
+            
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="vue-element-admin"><a href="#vue-element-admin" class="headerlink" title="vue-element-admin"></a>vue-element-admin</h1><p><a href="http://panjiachen.github.io/vue-element-admin" target="_blank" rel="external">线上地址</a></p>
+<p><a href="https://github.com/PanJiaChen/vue-element-admin/blob/master/README-en.md" target="_blank" rel="external">English Document</a></p>
+<p><a href="https://github.com/PanJiaChen/vue-element-admin/wiki" target="_blank" rel="external">wiki</a></p>
+<p><strong>注意：该项目目前使用element-ui@1.3.3版本,所以最低兼容 Vue 2.3.0</strong></p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>这半年来一直在用vue写管理后台，目前后台已经有百来个个页面，十几种权限，但维护成本依然很低，所以准备开源分享一下后台开发的经验和成果。目前的技术栈主要的采用vue+element+axios由webpack2打包.由于是个人项目，所以数据请求都是用了mockjs模拟。注意：在次项目基础上改造开发时请移除mock文件。</p>
+</blockquote>
+<p>写了一个系列的教程配套文章，如何从零构建后一个完整的后台项目:</p>
+<ul>
+<li><a href="https://github.com/PanJiaChen/vue-element-admin/wiki" target="_blank" rel="external">wiki</a></li>
+<li><a href="https://juejin.im/post/59097cd7a22b9d0065fb61d2" target="_blank" rel="external">手摸手，带你用 vue 撸后台 系列一(基础篇)</a></li>
+<li><a href="https://juejin.im/post/591aa14f570c35006961acac" target="_blank" rel="external">手摸手，带你用 vue 撸后台 系列二(登录权限篇)</a></li>
+<li><a href="https://juejin.im/post/593121aa0ce4630057f70d35" target="_blank" rel="external">手摸手，带你用 vue 撸后台 系列三 (实战篇)</a></li>
+<li><p><a href="https://segmentfault.com/a/1190000009090836" target="_blank" rel="external">手摸手，带你封装一个vue component</a></p>
+<p>相应需求，开了一个qq群 591724180 方便大家交流</p>
+<p><strong>如有问题请先看上述文章和Wiki,若不能满足，欢迎issue和pr~</strong></p>
+<p><strong>该项目并不是一个脚手架，更倾向于是一个集成解决方案方案</strong></p>
+<p><strong>该项目不支持低版本游览器，有需求请自行添加polyfill<a href="https://github.com/PanJiaChen/vue-element-admin/wiki#babel-polyfill" target="_blank" rel="external">详情</a></strong></p>
+</li>
+</ul>
+<h2 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h2><ul>
+<li>登录/注销</li>
+<li>权限验证</li>
+<li>侧边栏</li>
+<li>面包屑</li>
+<li>富文本编辑器</li>
+<li>Markdown编辑器</li>
+<li>JSON编辑器</li>
+<li>列表拖拽</li>
+<li>plitPane</li>
+<li>Dropzone</li>
+<li>Sticky</li>
+<li>CountTo</li>
+<li>echarts图表</li>
+<li>401，401错误页面</li>
+<li>错误日志</li>
+<li>导出excel</li>
+<li>table example</li>
+<li>动态table example</li>
+<li>拖拽table example</li>
+<li>内联编辑table example</li>
+<li>form example</li>
+<li>多环境发布</li>
+<li>dashboard</li>
+<li>二次登录</li>
+<li>动态侧边栏（支持多级路由）</li>
+<li>mock数据</li>
+<li>cache tabs example</li>
+<li>screenfull</li>
+<li>markdown2html</li>
+</ul>
+<h2 id="开发"><a href="#开发" class="headerlink" title="开发"></a>开发</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 克隆项目</span></div><div class="line">git <span class="built_in">clone</span> https://github.com/PanJiaChen/vue-element-admin.git</div><div class="line"></div><div class="line"><span class="comment"># 安装依赖</span></div><div class="line">npm install</div><div class="line">    //or <span class="comment"># 建议不要用cnpm  安装有各种诡异的bug 可以通过如下操作解决npm速度慢的问题</span></div><div class="line">npm install --registry=https://registry.npm.taobao.org</div><div class="line"></div><div class="line"><span class="comment"># 本地开发 开启服务</span></div><div class="line">npm run dev</div></pre></td></tr></table></figure>
+<p>浏览器访问 <a href="http://localhost:9527" target="_blank" rel="external">http://localhost:9527</a></p>
+<h2 id="发布"><a href="#发布" class="headerlink" title="发布"></a>发布</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 发布测试环境 带webpack ananalyzer</span></div><div class="line">npm run build:sit-preview</div><div class="line"></div><div class="line"><span class="comment"># 构建生成环境</span></div><div class="line">npm run build:prod</div></pre></td></tr></table></figure>
+<h2 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">├── build                      // 构建相关  </div><div class="line">├── config                     // 配置相关</div><div class="line">├── src                        // 源代码</div><div class="line">│   ├── api                    // 所有请求</div><div class="line">│   ├── assets                 // 主题 字体等静态资源</div><div class="line">│   ├── components             // 全局公用组件</div><div class="line">│   ├── directive              // 全局指令</div><div class="line">│   ├── filtres                // 全局filter</div><div class="line">│   ├── mock                   // mock数据</div><div class="line">│   ├── router                 // 路由</div><div class="line">│   ├── store                  // 全局store管理</div><div class="line">│   ├── styles                 // 全局样式</div><div class="line">│   ├── utils                  // 全局公用方法</div><div class="line">│   ├── view                   // view</div><div class="line">│   ├── App.vue                // 入口页面</div><div class="line">│   └── main.js                // 入口 加载组件 初始化等</div><div class="line">├── static                     // 第三方不打包资源</div><div class="line">│   ├── jquery</div><div class="line">│   └── Tinymce                // 富文本</div><div class="line">├── .babelrc                   // babel-loader 配置</div><div class="line">├── eslintrc.js                // eslint 配置项</div><div class="line">├── .gitignore                 // git 忽略项</div><div class="line">├── favicon.ico                // favicon图标</div><div class="line">├── index.html                 // html模板</div><div class="line">└── package.json               // package.json</div></pre></td></tr></table></figure>
+<h2 id="Changelog"><a href="#Changelog" class="headerlink" title="Changelog"></a>Changelog</h2><p>Detailed changes for each release are documented in the <a href="https://github.com/PanJiaChen/vue-element-admin/releases" target="_blank" rel="external">release notes</a>.</p>
+<h2 id="状态管理"><a href="#状态管理" class="headerlink" title="状态管理"></a>状态管理</h2><p>后台只有user和app配置相关状态使用vuex存在全局，其它数据都由每个业务页面自己管理。</p>
+<h2 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h2><h4 id="两步验证登录-支持微信和qq"><a href="#两步验证登录-支持微信和qq" class="headerlink" title="两步验证登录 支持微信和qq"></a>两步验证登录 支持微信和qq</h4><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/2login.gif" alt="两步验证 here" title="">
+                </div>
+                <div class="image-caption">两步验证 here</div>
+            </figure>
+<h4 id="真正的动态换肤"><a href="#真正的动态换肤" class="headerlink" title="真正的动态换肤"></a>真正的动态换肤</h4><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/theme.gif" alt="真正的动态换肤" title="">
+                </div>
+                <div class="image-caption">真正的动态换肤</div>
+            </figure><br><br><br><br><br>#### 可收起侧边栏<br><br><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/leftmenu.gif" alt="enter image description here" title="">
+                </div>
+                <div class="image-caption">enter image description here</div>
+            </figure>
+<h4 id="table拖拽排序"><a href="#table拖拽排序" class="headerlink" title="table拖拽排序"></a>table拖拽排序</h4><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/order.gif" alt="enter image description here" title="">
+                </div>
+                <div class="image-caption">enter image description here</div>
+            </figure>
+<h4 id="动态table"><a href="#动态table" class="headerlink" title="动态table"></a>动态table</h4><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/dynamictable.gif" alt="enter image description here" title="">
+                </div>
+                <div class="image-caption">enter image description here</div>
+            </figure>
+<h4 id="上传裁剪头像"><a href="#上传裁剪头像" class="headerlink" title="上传裁剪头像"></a>上传裁剪头像</h4><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/uploadAvatar.gif" alt="enter image description here" title="">
+                </div>
+                <div class="image-caption">enter image description here</div>
+            </figure>
+<h4 id="错误统计"><a href="#错误统计" class="headerlink" title="错误统计"></a>错误统计</h4><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/errorlog.gif" alt="enter image description here" title="">
+                </div>
+                <div class="image-caption">enter image description here</div>
+            </figure>
+<h4 id="富文本-整合七牛-打水印等个性化功能"><a href="#富文本-整合七牛-打水印等个性化功能" class="headerlink" title="富文本(整合七牛 打水印等个性化功能)"></a>富文本(整合七牛 打水印等个性化功能)</h4><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/editor.gif" alt="enter image description here" title="">
+                </div>
+                <div class="image-caption">enter image description here</div>
+            </figure>
+<h4 id="封装table组件"><a href="#封装table组件" class="headerlink" title="封装table组件"></a>封装table组件</h4><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/table.gif" alt="enter image description here" title="">
+                </div>
+                <div class="image-caption">enter image description here</div>
+            </figure>
+<h4 id="图表"><a href="#图表" class="headerlink" title="图表"></a>图表</h4><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/echarts.gif" alt="enter image description here" title="">
+                </div>
+                <div class="image-caption">enter image description here</div>
+            </figure>
+<h4 id="导出excel"><a href="#导出excel" class="headerlink" title="导出excel"></a>导出excel</h4><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/excel.png" alt="enter image description here" title="">
+                </div>
+                <div class="image-caption">enter image description here</div>
+            </figure>
+<h2 id="更多demo"><a href="#更多demo" class="headerlink" title="更多demo"></a><a href="http://panjiachen.github.io/vue-element-admin" target="_blank" rel="external">更多demo</a></h2>
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2017-07-07T08:26:02.337Z" itemprop="dateUpdated">2017-07-07 16:26:02</time>
+</span><br>
+
+
+        
+        文章链接<a href="/2017/07/07/vue/" target="_blank" rel="external">https://rolitter.github.io/2017/07/07/vue/</a>
+        
+    </div>
+    <footer>
+        <a href="https://rolitter.github.io">
+            <img src="/img/rolitter.jpg" alt="rolitter">
+            rolitter
+        </a>
+    </footer>
+</blockquote>
+
+        
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/">vue</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/技术/">技术</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/科技/">科技</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
+
+
+            
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2017/07/07/README-en/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">vue英文版</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<section class="comments" id="comments">
+    <div id="gitment_thread"></div>
+    <link rel="stylesheet" href="//unpkg.com/gitment/style/default.css">
+    <script src="//unpkg.com/gitment/dist/gitment.browser.js"></script>
+    <script>
+        var gitment = new Gitment({
+            owner: 'rolitter',
+            repo: 'rolitter.github.io',
+            oauth: {
+                client_id: '11ac73ed1e2949e259ed',
+                client_secret: 'b4ac077b9a3b14a63e27f42d4f20aa3b4494951f',
+            },
+        })
+        gitment.render('comments')
+    </script>
+</section>
+
+
+
+
+</article>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>rolitter &copy; 2017</span>
+            <span>
+                
+                	博客基于 <a href="http://hexo.io/" target="_blank">Hexo</a> 主题 <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: false, REWARD: false };
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.6.10"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.6.10" async></script>
+
+
+
+
+
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = 'rolitter';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>

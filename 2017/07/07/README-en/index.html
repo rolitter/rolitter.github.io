@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>vue英文版 | rolitter&#39;s Blog | a little bear</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#20a0ff">
+    
+    
+    <meta name="keywords" content="技术,科技,随笔,vue-en">
+    <meta name="description" content="Intro In the past half year, I have been building a backend for management dashboard using Vue. Though the backend has contained greater than 70 pages and over 10 permissions, it still takes insignifi">
+<meta name="keywords" content="技术,科技,随笔,vue-en">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vue英文版">
+<meta property="og:url" content="https://rolitter.github.io/2017/07/07/README-en/index.html">
+<meta property="og:site_name" content="rolitter&#39;s Blog">
+<meta property="og:description" content="Intro In the past half year, I have been building a backend for management dashboard using Vue. Though the backend has contained greater than 70 pages and over 10 permissions, it still takes insignifi">
+<meta property="og:image" content="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/2login.gif">
+<meta property="og:image" content="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/theme.gif">
+<meta property="og:image" content="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/leftmenu.gif">
+<meta property="og:image" content="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/order.gif">
+<meta property="og:image" content="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/dynamictable.gif">
+<meta property="og:image" content="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/uploadAvatar.gif">
+<meta property="og:image" content="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/errorlog.gif">
+<meta property="og:image" content="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/editor.gif">
+<meta property="og:image" content="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/table.gif">
+<meta property="og:image" content="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/echarts.gif">
+<meta property="og:image" content="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/excel.png">
+<meta property="og:updated_time" content="2017-07-07T08:27:03.098Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="vue英文版">
+<meta name="twitter:description" content="Intro In the past half year, I have been building a backend for management dashboard using Vue. Though the backend has contained greater than 70 pages and over 10 permissions, it still takes insignifi">
+<meta name="twitter:image" content="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/2login.gif">
+    
+        <link rel="alternate" type="application/atom+xml" title="rolitter&#39;s Blog" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/img/rolitter.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.6.10">
+    <script>window.lazyScripts=[]</script>
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.png)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/rolitter.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">rolitter</h5>
+          <a href="mailto:rolitter@gmail.com" title="rolitter@gmail.com" class="mail">rolitter@gmail.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                文章
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/rolitter" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">vue英文版</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">vue英文版</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-07-07T03:00:03.015Z" itemprop="datePublished" class="page-time">
+  2017-07-07
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Intro"><span class="post-toc-number">1.</span> <span class="post-toc-text">Intro</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Features"><span class="post-toc-number">2.</span> <span class="post-toc-text">Features</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Development"><span class="post-toc-number">3.</span> <span class="post-toc-text">Development</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Distribution"><span class="post-toc-number">4.</span> <span class="post-toc-text">Distribution</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Directory-structure"><span class="post-toc-number">5.</span> <span class="post-toc-text">Directory structure</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Changelog"><span class="post-toc-number">6.</span> <span class="post-toc-text">Changelog</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#State-Management"><span class="post-toc-number">7.</span> <span class="post-toc-text">State Management</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Demo"><span class="post-toc-number">8.</span> <span class="post-toc-text">Demo</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Two-factor-authentication-supporting-WeChat-and-QQ"><span class="post-toc-number">8.0.1.</span> <span class="post-toc-text">Two-factor authentication, supporting WeChat and QQ</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Realtime-switching-themes"><span class="post-toc-number">8.0.2.</span> <span class="post-toc-text">Realtime switching themes</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Collapsing-sidebar"><span class="post-toc-number">8.0.3.</span> <span class="post-toc-text">Collapsing sidebar</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Drag-amp-drop-table"><span class="post-toc-number">8.0.4.</span> <span class="post-toc-text">Drag & drop table</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Interactive-table"><span class="post-toc-number">8.0.5.</span> <span class="post-toc-text">Interactive table</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Uploading-cropped-avatar"><span class="post-toc-number">8.0.6.</span> <span class="post-toc-text">Uploading cropped avatar</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Error-log"><span class="post-toc-number">8.0.7.</span> <span class="post-toc-text">Error log</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Rich-text-integrated-with-Qiniu-watermark-and-customization"><span class="post-toc-number">8.0.8.</span> <span class="post-toc-text">Rich text (integrated with Qiniu, watermark and customization)</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Packaging-table-component"><span class="post-toc-number">8.0.9.</span> <span class="post-toc-text">Packaging table component</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Charts"><span class="post-toc-number">8.0.10.</span> <span class="post-toc-text">Charts</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Exporting-to-Excel"><span class="post-toc-number">8.0.11.</span> <span class="post-toc-text">Exporting to Excel</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#More"><span class="post-toc-number">8.0.12.</span> <span class="post-toc-text">More</span></a></li></ol></li></ol></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-README-en"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">vue英文版</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017-07-07 11:00:03" datetime="2017-07-07T03:00:03.015Z"  itemprop="datePublished">2017-07-07</time>
+
+            
+
+
+            
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h2 id="Intro"><a href="#Intro" class="headerlink" title="Intro"></a>Intro</h2><blockquote>
+<p>In the past half year, I have been building a backend for management dashboard using Vue. Though the backend has contained greater than 70 pages and over 10 permissions, it still takes insignificant effort to maintain the project. So I decide to make it open source so as to share my development experience and progress on backend. The tech stack is mainly <a href="https://github.com/vuejs/vue" target="_blank" rel="external">Vue.js</a>+<a href="https://github.com/ElemeFE/element" target="_blank" rel="external">Element</a>+<a href="https://github.com/mzabriskie/axios" target="_blank" rel="external">axios</a>. Since it’s a personal project, all data requests are simulated with <a href="https://github.com/nuysoft/Mock" target="_blank" rel="external">Mock.js</a>. <strong>Note:</strong> if anyone wants to modify or develop based on this project, please remove the mock files.</p>
+</blockquote>
+<p><strong>Live demo:</strong> <a href="http://panjiachen.github.io/vue-element-admin" target="_blank" rel="external">http://panjiachen.github.io/vue-element-admin</a></p>
+<p><strong>Note: element-ui@1.3.3 is used in the project, so vue 2.3.0+ is required.</strong></p>
+<p>More tutorials incoming. Including articles on:</p>
+<ul>
+<li>How to build structure of a backend dashboard project from scratch</li>
+<li>How to make a complete user system (e.g. permission authentication, two-factor authentication)</li>
+<li>How to package components (e.g. rich text)</li>
+<li>How to integrate with <a href="https://www.qiniu.com/" target="_blank" rel="external">Qiniu</a></li>
+<li>Other development experience on backend</li>
+</ul>
+<p>Join the group on QQ 591724180.</p>
+<p><strong>Tutorials:</strong></p>
+<ul>
+<li><a href="https://github.com/PanJiaChen/vue-element-admin/wiki" target="_blank" rel="external">Wiki</a></li>
+<li><a href="https://juejin.im/post/59097cd7a22b9d0065fb61d2" target="_blank" rel="external">Step by step instructions on playing with backend using Vue Part 1 - Fundamentals</a></li>
+<li><a href="https://juejin.im/post/591aa14f570c35006961acac" target="_blank" rel="external">Step by step instructions on playing with backend using Vue Part 2 - Login permission</a></li>
+<li><a href="https://segmentfault.com/a/1190000009090836" target="_blank" rel="external">Step by step instructions on packaging a Vue component</a></li>
+</ul>
+<p><strong>Please read the Wiki and articles above before creating any issue. Feel free to contribute by making a pull request.</strong></p>
+<h2 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h2><ul>
+<li>Login/Logout</li>
+<li>Permission authentication</li>
+<li>Sidebar</li>
+<li>Breadcrumb</li>
+<li>Rich text editor</li>
+<li>Markdown editor</li>
+<li>JSON editor</li>
+<li>Drag &amp; drop list</li>
+<li>SplitPane</li>
+<li>Dropzone</li>
+<li>Sticky</li>
+<li>CountTo</li>
+<li>ECharts</li>
+<li>401, 404 error page</li>
+<li>Error log</li>
+<li>Exporting to Excel</li>
+<li>Table example</li>
+<li>Interactive table example</li>
+<li>Drag &amp; drop table example</li>
+<li>Form example</li>
+<li>Multi-environments distribution</li>
+<li>Dashboard</li>
+<li>Two-factor authentication</li>
+<li>Collapsing sidebar (support nested routes)</li>
+<li>Mock data</li>
+<li>cache tabs example</li>
+<li>screenfull</li>
+<li>markdown2html</li>
+</ul>
+<h2 id="Development"><a href="#Development" class="headerlink" title="Development"></a>Development</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Clone project</span></div><div class="line">git <span class="built_in">clone</span> https://github.com/PanJiaChen/vue-element-admin.git</div><div class="line"></div><div class="line"><span class="comment"># Install dependencies</span></div><div class="line">npm install</div><div class="line"></div><div class="line"><span class="comment"># Or (not recommended for cnpm due to unknown bugs, use taobao mirror instead)</span></div><div class="line">npm install --registry=https://registry.npm.taobao.org</div><div class="line"></div><div class="line"><span class="comment"># Run local dev server</span></div><div class="line">npm run dev</div></pre></td></tr></table></figure>
+<p>Visit in browser: <a href="http://localhost:9527" target="_blank" rel="external">http://localhost:9527</a></p>
+<h2 id="Distribution"><a href="#Distribution" class="headerlink" title="Distribution"></a>Distribution</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Build staged environment with webpack-bundle-analyzer</span></div><div class="line">npm run build:sit-preview</div><div class="line"></div><div class="line"><span class="comment"># Build production environment</span></div><div class="line">npm run build:prod</div></pre></td></tr></table></figure>
+<h2 id="Directory-structure"><a href="#Directory-structure" class="headerlink" title="Directory structure"></a>Directory structure</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">├── build                      // build </div><div class="line">├── config                     // config</div><div class="line">├── src                        // source code</div><div class="line">│   ├── api                    // all requests</div><div class="line">│   ├── assets                 // static resource like themes, fonts</div><div class="line">│   ├── components             // global public components</div><div class="line">│   ├── directive              // global directive</div><div class="line">│   ├── filters                // global filters</div><div class="line">│   ├── mock                   // mock data</div><div class="line">│   ├── router                 // router</div><div class="line">│   ├── store                  // global status management</div><div class="line">│   ├── styles                 // global styles</div><div class="line">│   ├── utils                  // global public functions</div><div class="line">│   ├── view                   // view</div><div class="line">│   ├── App.vue                // entry view</div><div class="line">│   └── main.js                // entry for loading components, initialization</div><div class="line">├── static                     // third-party libraries not packed with Webpack</div><div class="line">│   ├── jquery</div><div class="line">│   └── Tinymce                // rich text</div><div class="line">├── .babelrc                   // babel-loader config</div><div class="line">├── eslintrc.js                // eslint config</div><div class="line">├── .gitignore                 // gitignore</div><div class="line">├── favicon.ico                // favicon</div><div class="line">├── index.html                 // html template</div><div class="line">└── package.json               // package.json</div></pre></td></tr></table></figure>
+<h2 id="Changelog"><a href="#Changelog" class="headerlink" title="Changelog"></a>Changelog</h2><p>Detailed changes for each release are documented in the <a href="https://github.com/PanJiaChen/vue-element-admin/releases" target="_blank" rel="external">release notes</a>.</p>
+<h2 id="State-Management"><a href="#State-Management" class="headerlink" title="State Management"></a>State Management</h2><p>Only status of user and app configuration is managed by Vuex. Other data are managed by their own business pages.</p>
+<h2 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a>Demo</h2><h4 id="Two-factor-authentication-supporting-WeChat-and-QQ"><a href="#Two-factor-authentication-supporting-WeChat-and-QQ" class="headerlink" title="Two-factor authentication, supporting WeChat and QQ"></a>Two-factor authentication, supporting WeChat and QQ</h4><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/2login.gif" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h4 id="Realtime-switching-themes"><a href="#Realtime-switching-themes" class="headerlink" title="Realtime switching themes"></a>Realtime switching themes</h4><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/theme.gif" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h4 id="Collapsing-sidebar"><a href="#Collapsing-sidebar" class="headerlink" title="Collapsing sidebar"></a>Collapsing sidebar</h4><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/leftmenu.gif" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h4 id="Drag-amp-drop-table"><a href="#Drag-amp-drop-table" class="headerlink" title="Drag &amp; drop table"></a>Drag &amp; drop table</h4><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/order.gif" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h4 id="Interactive-table"><a href="#Interactive-table" class="headerlink" title="Interactive table"></a>Interactive table</h4><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/dynamictable.gif" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h4 id="Uploading-cropped-avatar"><a href="#Uploading-cropped-avatar" class="headerlink" title="Uploading cropped avatar"></a>Uploading cropped avatar</h4><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/uploadAvatar.gif" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h4 id="Error-log"><a href="#Error-log" class="headerlink" title="Error log"></a>Error log</h4><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/errorlog.gif" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h4 id="Rich-text-integrated-with-Qiniu-watermark-and-customization"><a href="#Rich-text-integrated-with-Qiniu-watermark-and-customization" class="headerlink" title="Rich text (integrated with Qiniu, watermark and customization)"></a>Rich text (integrated with Qiniu, watermark and customization)</h4><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/editor.gif" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h4 id="Packaging-table-component"><a href="#Packaging-table-component" class="headerlink" title="Packaging table component"></a>Packaging table component</h4><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/table.gif" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h4 id="Charts"><a href="#Charts" class="headerlink" title="Charts"></a>Charts</h4><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/echarts.gif" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h4 id="Exporting-to-Excel"><a href="#Exporting-to-Excel" class="headerlink" title="Exporting to Excel"></a>Exporting to Excel</h4><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="https://github.com/PanJiaChen/vue-element-admin/blob/master/gifs/excel.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<h4 id="More"><a href="#More" class="headerlink" title="More"></a>More</h4><p><a href="http://panjiachen.github.io/vue-element-admin" target="_blank" rel="external">http://panjiachen.github.io/vue-element-admin</a></p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2017-07-07T08:27:03.098Z" itemprop="dateUpdated">2017-07-07 16:27:03</time>
+</span><br>
+
+
+        
+        文章链接<a href="/2017/07/07/README-en/" target="_blank" rel="external">https://rolitter.github.io/2017/07/07/README-en/</a>
+        
+    </div>
+    <footer>
+        <a href="https://rolitter.github.io">
+            <img src="/img/rolitter.jpg" alt="rolitter">
+            rolitter
+        </a>
+    </footer>
+</blockquote>
+
+        
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue-en/">vue-en</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/技术/">技术</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/科技/">科技</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
+
+
+            
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2017/07/07/vue/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">vue使用方法</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2017/07/06/readme/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">欢迎来到我的博客</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+<section class="comments" id="comments">
+    <div id="gitment_thread"></div>
+    <link rel="stylesheet" href="//unpkg.com/gitment/style/default.css">
+    <script src="//unpkg.com/gitment/dist/gitment.browser.js"></script>
+    <script>
+        var gitment = new Gitment({
+            owner: 'rolitter',
+            repo: 'rolitter.github.io',
+            oauth: {
+                client_id: '11ac73ed1e2949e259ed',
+                client_secret: 'b4ac077b9a3b14a63e27f42d4f20aa3b4494951f',
+            },
+        })
+        gitment.render('comments')
+    </script>
+</section>
+
+
+
+
+</article>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>rolitter &copy; 2017</span>
+            <span>
+                
+                	博客基于 <a href="http://hexo.io/" target="_blank">Hexo</a> 主题 <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: false, REWARD: false };
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.6.10"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.6.10" async></script>
+
+
+
+
+
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = 'rolitter';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
