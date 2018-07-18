@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+<!-- Tencent Speed -->
+<script>var _speedMark = new Date()</script>
+<!-- End Tencent Speed -->
+<!-- Tencent Analysis -->
+<script async src="//tajs.qq.com/stats?sId=65936158"></script>
+<!-- End Tencent Analysis -->
+
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>正则速查表 | Rolitter Blog | 日常学习与兴趣交流</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="JavaScript,reg">
+    <meta name="description" content="正则匹配中文字节1234// 使用正则匹配中文字节, 将其替换为xx, 再获取字符串的长度就是完整的长度了.function getLen(str) &amp;#123;  return str.replace(/[^\x00-\xff]/g, &apos;xx&apos;).length;&amp;#125; 邮箱12// 匹配是否符合邮件规则var reg = /\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+">
+<meta name="keywords" content="JavaScript,reg">
+<meta property="og:type" content="article">
+<meta property="og:title" content="正则速查表">
+<meta property="og:url" content="https://rolitter.github.io/2018/07/04/正则速查表/index.html">
+<meta property="og:site_name" content="Rolitter Blog">
+<meta property="og:description" content="正则匹配中文字节1234// 使用正则匹配中文字节, 将其替换为xx, 再获取字符串的长度就是完整的长度了.function getLen(str) &amp;#123;  return str.replace(/[^\x00-\xff]/g, &apos;xx&apos;).length;&amp;#125; 邮箱12// 匹配是否符合邮件规则var reg = /\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+">
+<meta property="og:updated_time" content="2018-07-04T04:16:30.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="正则速查表">
+<meta name="twitter:description" content="正则匹配中文字节1234// 使用正则匹配中文字节, 将其替换为xx, 再获取字符串的长度就是完整的长度了.function getLen(str) &amp;#123;  return str.replace(/[^\x00-\xff]/g, &apos;xx&apos;).length;&amp;#125; 邮箱12// 匹配是否符合邮件规则var reg = /\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+">
+    
+        <link rel="alternate" type="application/atom+xml" title="Rolitter Blog" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.7.2">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-chevron-left"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.png)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/rolitter.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">rolitter</h5>
+          <a href="mailto:rolitter@gmail.com" title="rolitter@gmail.com" class="mail">rolitter@gmail.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                文章
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/about"  >
+                <i class="icon icon-lg icon-user-circle-o"></i>
+                关于我
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/demo"  >
+                <i class="icon icon-lg icon-html5"></i>
+                demo
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/rolitter" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">正则速查表</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">正则速查表</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2018-07-04T04:16:30.000Z" itemprop="datePublished" class="page-time">
+  2018-07-04
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#正则匹配中文字节"><span class="post-toc-number">1.</span> <span class="post-toc-text">正则匹配中文字节</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#邮箱"><span class="post-toc-number">2.</span> <span class="post-toc-text">邮箱</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#常见表单验证"><span class="post-toc-number">3.</span> <span class="post-toc-text">常见表单验证</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#联系方式"><span class="post-toc-number">4.</span> <span class="post-toc-text">联系方式</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#匹配特定数字"><span class="post-toc-number">5.</span> <span class="post-toc-text">匹配特定数字</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#字符串相关"><span class="post-toc-number">6.</span> <span class="post-toc-text">字符串相关</span></a></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-正则速查表"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">正则速查表</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2018-07-04 12:16:30" datetime="2018-07-04T04:16:30.000Z"  itemprop="datePublished">2018-07-04</time>
+
+            
+
+
+            
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h2 id="正则匹配中文字节"><a href="#正则匹配中文字节" class="headerlink" title="正则匹配中文字节"></a>正则匹配中文字节</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 使用正则匹配中文字节, 将其替换为xx, 再获取字符串的长度就是完整的长度了.</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">getLen</span>(<span class="params">str</span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> str.replace(<span class="regexp">/[^\x00-\xff]/g</span>, <span class="string">'xx'</span>).length;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="邮箱"><a href="#邮箱" class="headerlink" title="邮箱"></a>邮箱</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 匹配是否符合邮件规则</span></div><div class="line"><span class="keyword">var</span> reg = <span class="regexp">/\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/</span>;</div></pre></td></tr></table></figure>
+<h2 id="常见表单验证"><a href="#常见表单验证" class="headerlink" title="常见表单验证"></a>常见表单验证</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 用户名正则，4到16位（字母，数字，下划线，减号）</span></div><div class="line"><span class="keyword">var</span> userNameReg = <span class="regexp">/^[a-zA-Z0-9_-]&#123;4,16&#125;$/</span>;</div><div class="line"></div><div class="line"><span class="comment">// 必须拥有数字和特殊字符，并且在6 ~ 16位之间</span></div><div class="line"><span class="comment">// (?=.*[0-9]) - 断言一个字符串至少有一个数字;</span></div><div class="line"><span class="comment">// (?=.*[!@#$%^&amp;*]) - 断言一个字符串至少有一个特殊字符。</span></div><div class="line"><span class="keyword">var</span> reg = <span class="regexp">/^(?=.*[0-9])(?=.*[!@#$%^&amp;*])[a-zA-Z0-9!@#$%^&amp;*]&#123;6,16&#125;$/</span>;</div><div class="line"></div><div class="line"><span class="comment">// 匹配邮箱地址</span></div><div class="line"><span class="keyword">var</span> mailReg = <span class="regexp">/\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/</span>;</div><div class="line"></div><div class="line"><span class="comment">// 中国六位数的邮政编码</span></div><div class="line"><span class="keyword">var</span> postalCode = <span class="regexp">/^\d&#123;6&#125;$/</span>;</div><div class="line"></div><div class="line"><span class="comment">// 匹配15~18位身份证</span></div><div class="line"><span class="keyword">var</span> IDCard = <span class="regexp">/(^[1-9]\d&#123;5&#125;(18|19|([23]\d))\d&#123;2&#125;((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d&#123;3&#125;[0-9Xx]$)|(^[1-9]\d&#123;5&#125;\d&#123;2&#125;((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d&#123;2&#125;$)/</span>;</div><div class="line"></div><div class="line"><span class="comment">// 匹配18位的新版身份证</span></div><div class="line"><span class="keyword">var</span> IDCard_18 = <span class="regexp">/^[1-9]\d&#123;5&#125;(18|19|([23]\d))\d&#123;2&#125;((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d&#123;3&#125;[0-9Xx]$/</span>;</div><div class="line"></div><div class="line"></div><div class="line"><span class="comment">// 校验输入框是字符数为是否为 4~16 位(英文长度为1, 汉字长度为2)</span></div><div class="line"><span class="keyword">var</span> numName = <span class="regexp">/^[a-zA-Z0-9]&#123;4,16&#125;$/</span>;</div><div class="line"><span class="keyword">var</span> mate = numName.test(value.replace(<span class="regexp">/[\u4e00-\u9fa5]/g</span>, <span class="string">'aa'</span>));</div></pre></td></tr></table></figure>
+<h2 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 5-11位的腾讯qq号</span></div><div class="line"><span class="keyword">var</span> qqReg = <span class="regexp">/^[1-9][0-9]&#123;4,11&#125;$/</span>;</div><div class="line"></div><div class="line"><span class="comment">// 微信号正则，6至20位，以字母开头，字母，数字，减号，下划线</span></div><div class="line"><span class="keyword">var</span> qqReg = <span class="regexp">/^[a-zA-Z]([-_a-zA-Z0-9]&#123;5,19&#125;)+$/</span>;</div><div class="line"></div><div class="line"><span class="comment">// 国内常见</span></div><div class="line"><span class="keyword">var</span> phone = <span class="regexp">/^1[3|5|8|9]\d&#123;9&#125;$/</span>;</div><div class="line"></div><div class="line"><span class="comment">// 固定电话</span></div><div class="line"><span class="keyword">var</span> telephone = <span class="regexp">/^(0[0-9]&#123;2&#125;)\d&#123;8&#125;$|^(0[0-9]&#123;3&#125;(\d&#123;7,8&#125;))$/</span>;</div></pre></td></tr></table></figure>
+<h2 id="匹配特定数字"><a href="#匹配特定数字" class="headerlink" title="匹配特定数字"></a>匹配特定数字</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 匹配正整数</span></div><div class="line"><span class="keyword">var</span> reg = <span class="regexp">/^[1-9]\d*$/</span>;</div><div class="line"></div><div class="line"><span class="comment">// 匹配负整数</span></div><div class="line"><span class="keyword">var</span> reg = <span class="regexp">/^-[1-9]\d*$/</span>;</div><div class="line"></div><div class="line"><span class="comment">// 匹配整数</span></div><div class="line"><span class="keyword">var</span> reg = <span class="regexp">/^-?[1-9]\d*$/</span>;</div><div class="line"></div><div class="line"><span class="comment">// 匹配非负整数（正整数 + 0）</span></div><div class="line"><span class="keyword">var</span> reg = <span class="regexp">/^[1-9]\d*|0$/</span>;</div><div class="line"></div><div class="line"><span class="comment">// 匹配非正整数（负整数 + 0）</span></div><div class="line"><span class="keyword">var</span> reg = <span class="regexp">/^-[1-9]\d*|0$/</span>;</div><div class="line"></div><div class="line"><span class="comment">// 匹配正浮点数</span></div><div class="line"><span class="keyword">var</span> reg = <span class="regexp">/^[1-9]\d*\.\d*|0\.\d*[1-9]\d*$/</span>;</div><div class="line"></div><div class="line"><span class="comment">// 匹配负浮点数</span></div><div class="line"><span class="keyword">var</span> reg = <span class="regexp">/^-([1-9]\d*\.\d*|0\.\d*[1-9]\d*)$/</span>;</div><div class="line"></div><div class="line"><span class="comment">// 匹配浮点数</span></div><div class="line"><span class="keyword">var</span> reg = <span class="regexp">/^-?([1-9]\d*\.\d*|0\.\d*[1-9]\d*|0?\.0+|0)$/</span>;</div><div class="line"></div><div class="line"><span class="comment">// 匹配非负浮点数（正浮点数 + 0）</span></div><div class="line"><span class="keyword">var</span> reg = <span class="regexp">/^[1-9]\d*\.\d*|0\.\d*[1-9]\d*|0?\.0+|0$/</span>;</div><div class="line"></div><div class="line"><span class="comment">// 匹配非正浮点数（负浮点数 + 0）</span></div><div class="line"><span class="keyword">var</span> reg = <span class="regexp">/^(-([1-9]\d*\.\d*|0\.\d*[1-9]\d*))|0?\.0+|0$/</span>;</div></pre></td></tr></table></figure>
+<h2 id="字符串相关"><a href="#字符串相关" class="headerlink" title="字符串相关"></a>字符串相关</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 匹配由26个英文字母组成的字符串</span></div><div class="line"><span class="keyword">var</span> reg = <span class="regexp">/^[A-Za-z]+$/</span>;</div><div class="line"></div><div class="line"><span class="comment">// 匹配由26个英文字母的大写组成的字符串</span></div><div class="line"><span class="keyword">var</span> reg = <span class="regexp">/^[A-Z]+$/</span>;</div><div class="line"></div><div class="line"><span class="comment">// 匹配由26个英文字母的小写组成的字符串</span></div><div class="line"><span class="keyword">var</span> reg = <span class="regexp">/^[a-z]+$/</span>;</div><div class="line"></div><div class="line"><span class="comment">// 匹配由数字和26个英文字母组成的字符串</span></div><div class="line"><span class="keyword">var</span> reg = <span class="regexp">/^[A-Za-z0-9]+$/</span>;</div><div class="line"></div><div class="line"><span class="comment">// 匹配由数字、26个英文字母或者下;划线组成的字符串</span></div><div class="line"><span class="keyword">var</span> reg = <span class="regexp">/^\w+$/</span>;</div><div class="line"></div><div class="line"><span class="comment">// 匹配空白行的正则表达式</span></div><div class="line"><span class="keyword">var</span> reg = <span class="regexp">/\n\s*\r/</span>;</div><div class="line"></div><div class="line"><span class="comment">// 匹配首尾空白字符的正则表达式</span></div><div class="line"><span class="keyword">var</span> reg = <span class="regexp">/^\s*|\s*$/</span>;</div><div class="line"><span class="keyword">var</span> rtrim = <span class="regexp">/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g</span>;</div><div class="line"></div><div class="line"><span class="comment">// 匹配双字节字符(包括汉字在内, 一个双字节字符长度计2，ASCII字符计1)</span></div><div class="line"><span class="keyword">var</span> reg = <span class="regexp">/[^\x00-\xff]/g</span>;</div></pre></td></tr></table></figure>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2018-07-04T04:16:30.000Z" itemprop="dateUpdated">2018-07-04 12:16:30</time>
+</span>
+
+
+        
+        <footer>
+            <a href="https://rolitter.github.io" target="_blank">
+                <img src="/img/rolitter.jpg" alt="rolitter">
+                rolitter
+            </a>
+        </footer>
+    </div>
+    
+    
+</blockquote>
+
+        
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/reg/">reg</a></li></ul>
+
+
+            
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2018/07/04/图标跟随文字,溢出省略/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> 图标跟随文字,溢出省略</div>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2018/07/03/JavaScript小测验题目及答案/" id="post-next" class="post-nav-link">
+        <div class="tips">JavaScript小测验题目及答案 <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>rolitter &copy; 2017 - 2018</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: false, REWARD: false };
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.7.2"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.7.2" async></script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

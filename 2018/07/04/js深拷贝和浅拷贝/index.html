@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+<!-- Tencent Speed -->
+<script>var _speedMark = new Date()</script>
+<!-- End Tencent Speed -->
+<!-- Tencent Analysis -->
+<script async src="//tajs.qq.com/stats?sId=65936158"></script>
+<!-- End Tencent Analysis -->
+
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>js深拷贝和浅拷贝 | Rolitter Blog | 日常学习与兴趣交流</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="JavaScript">
+    <meta name="description" content="es6es6拷贝,不能深拷贝123let arr = &amp;#123;t: 1, p: &apos;gg&apos;&amp;#125;let brr= Object.assign(&amp;#123;&amp;#125;, arr);console.log(brr) //&amp;#123;t: 1, p: &apos;gg&apos;&amp;#125; JSON简单实现深拷贝的方法，当然，有一定限制，如下：1const obj1 = JSON.parse(JSON.stri">
+<meta name="keywords" content="JavaScript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="js深拷贝和浅拷贝">
+<meta property="og:url" content="https://rolitter.github.io/2018/07/04/js深拷贝和浅拷贝/index.html">
+<meta property="og:site_name" content="Rolitter Blog">
+<meta property="og:description" content="es6es6拷贝,不能深拷贝123let arr = &amp;#123;t: 1, p: &apos;gg&apos;&amp;#125;let brr= Object.assign(&amp;#123;&amp;#125;, arr);console.log(brr) //&amp;#123;t: 1, p: &apos;gg&apos;&amp;#125; JSON简单实现深拷贝的方法，当然，有一定限制，如下：1const obj1 = JSON.parse(JSON.stri">
+<meta property="og:updated_time" content="2018-07-04T04:16:30.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="js深拷贝和浅拷贝">
+<meta name="twitter:description" content="es6es6拷贝,不能深拷贝123let arr = &amp;#123;t: 1, p: &apos;gg&apos;&amp;#125;let brr= Object.assign(&amp;#123;&amp;#125;, arr);console.log(brr) //&amp;#123;t: 1, p: &apos;gg&apos;&amp;#125; JSON简单实现深拷贝的方法，当然，有一定限制，如下：1const obj1 = JSON.parse(JSON.stri">
+    
+        <link rel="alternate" type="application/atom+xml" title="Rolitter Blog" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.7.2">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-chevron-left"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.png)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/rolitter.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">rolitter</h5>
+          <a href="mailto:rolitter@gmail.com" title="rolitter@gmail.com" class="mail">rolitter@gmail.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                文章
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/about"  >
+                <i class="icon icon-lg icon-user-circle-o"></i>
+                关于我
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/demo"  >
+                <i class="icon icon-lg icon-html5"></i>
+                demo
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/rolitter" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">js深拷贝和浅拷贝</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">js深拷贝和浅拷贝</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2018-07-04T04:16:30.000Z" itemprop="datePublished" class="page-time">
+  2018-07-04
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#es6"><span class="post-toc-number">1.</span> <span class="post-toc-text">es6</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#JSON"><span class="post-toc-number">2.</span> <span class="post-toc-text">JSON</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Lodash"><span class="post-toc-number">3.</span> <span class="post-toc-text">Lodash</span></a></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-js深拷贝和浅拷贝"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">js深拷贝和浅拷贝</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2018-07-04 12:16:30" datetime="2018-07-04T04:16:30.000Z"  itemprop="datePublished">2018-07-04</time>
+
+            
+
+
+            
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h2 id="es6"><a href="#es6" class="headerlink" title="es6"></a>es6</h2><p>es6拷贝,不能深拷贝<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">let</span> arr = &#123;<span class="attr">t</span>: <span class="number">1</span>, <span class="attr">p</span>: <span class="string">'gg'</span>&#125;</div><div class="line"><span class="keyword">let</span> brr= <span class="built_in">Object</span>.assign(&#123;&#125;, arr);</div><div class="line"><span class="built_in">console</span>.log(brr) <span class="comment">//&#123;t: 1, p: 'gg'&#125;</span></div></pre></td></tr></table></figure></p>
+<h2 id="JSON"><a href="#JSON" class="headerlink" title="JSON"></a>JSON</h2><p>简单实现深拷贝的方法，当然，有一定限制，如下：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> obj1 = <span class="built_in">JSON</span>.parse(<span class="built_in">JSON</span>.stringify(obj));</div></pre></td></tr></table></figure></p>
+<p>思路就是将一个对象转成json字符串，然后又将字符串转回对象。这个方法当有属性是undefined或null的时候会被移除掉。<br>而且不能拷贝function.</p>
+<h2 id="Lodash"><a href="#Lodash" class="headerlink" title="Lodash"></a>Lodash</h2><p>使用Lodash 的_.defaultsDeep方法可以得到深拷贝的合并。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> array = [<span class="number">1</span>];</div><div class="line"><span class="keyword">var</span> other = _.concat(array, <span class="number">2</span>, [<span class="number">3</span>], [[<span class="number">4</span>]]);</div><div class="line"> </div><div class="line"><span class="built_in">console</span>.log(other);</div><div class="line"><span class="comment">// =&gt; [1, 2, 3, [4]]</span></div><div class="line"> </div><div class="line"><span class="built_in">console</span>.log(array);</div><div class="line"><span class="comment">// =&gt; [1]</span></div></pre></td></tr></table></figure></p>
+<p><a href="http://www.css88.com/doc/lodash" target="_blank" rel="external">Lodash中文文档</a></p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2018-07-04T04:16:30.000Z" itemprop="dateUpdated">2018-07-04 12:16:30</time>
+</span>
+
+
+        
+        <footer>
+            <a href="https://rolitter.github.io" target="_blank">
+                <img src="/img/rolitter.jpg" alt="rolitter">
+                rolitter
+            </a>
+        </footer>
+    </div>
+    
+    
+</blockquote>
+
+        
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/">JavaScript</a></li></ul>
+
+
+            
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2018/07/04/日期格式化函数/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> 日期格式化函数</div>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2018/07/04/图标跟随文字,溢出省略/" id="post-next" class="post-nav-link">
+        <div class="tips">图标跟随文字,溢出省略 <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>rolitter &copy; 2017 - 2018</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: false, REWARD: false };
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.7.2"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.7.2" async></script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

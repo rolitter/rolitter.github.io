@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+<!-- Tencent Speed -->
+<script>var _speedMark = new Date()</script>
+<!-- End Tencent Speed -->
+<!-- Tencent Analysis -->
+<script async src="//tajs.qq.com/stats?sId=65936158"></script>
+<!-- End Tencent Analysis -->
+
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>微信下iOS和Android视频播放问题 | Rolitter Blog | 日常学习与兴趣交流</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="JavaScript,css,video">
+    <meta name="description" content="微信下 iOS Android 全屏视频在制作全屏视频需求时，你会发现 iOS、Android 在这一块多多少少都存在一些问题。 iOSiOS 通过 webkit-playsinline、playsinline 实现内嵌全屏，不调用系统全屏，有必要的情况下配合 iphone-inline-video 库使用。1&amp;lt;video src=&quot;video.mp4&quot; webkit-playsinline">
+<meta name="keywords" content="JavaScript,css,video">
+<meta property="og:type" content="article">
+<meta property="og:title" content="微信下iOS和Android视频播放问题">
+<meta property="og:url" content="https://rolitter.github.io/2018/07/04/微信下iOS和Android视频播放问题/index.html">
+<meta property="og:site_name" content="Rolitter Blog">
+<meta property="og:description" content="微信下 iOS Android 全屏视频在制作全屏视频需求时，你会发现 iOS、Android 在这一块多多少少都存在一些问题。 iOSiOS 通过 webkit-playsinline、playsinline 实现内嵌全屏，不调用系统全屏，有必要的情况下配合 iphone-inline-video 库使用。1&amp;lt;video src=&quot;video.mp4&quot; webkit-playsinline">
+<meta property="og:updated_time" content="2018-07-04T04:16:30.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="微信下iOS和Android视频播放问题">
+<meta name="twitter:description" content="微信下 iOS Android 全屏视频在制作全屏视频需求时，你会发现 iOS、Android 在这一块多多少少都存在一些问题。 iOSiOS 通过 webkit-playsinline、playsinline 实现内嵌全屏，不调用系统全屏，有必要的情况下配合 iphone-inline-video 库使用。1&amp;lt;video src=&quot;video.mp4&quot; webkit-playsinline">
+    
+        <link rel="alternate" type="application/atom+xml" title="Rolitter Blog" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css?v=1.7.2">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-chevron-left"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.png)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/rolitter.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">rolitter</h5>
+          <a href="mailto:rolitter@gmail.com" title="rolitter@gmail.com" class="mail">rolitter@gmail.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                文章
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/about"  >
+                <i class="icon icon-lg icon-user-circle-o"></i>
+                关于我
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/demo"  >
+                <i class="icon icon-lg icon-html5"></i>
+                demo
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/rolitter" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">微信下iOS和Android视频播放问题</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">微信下iOS和Android视频播放问题</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2018-07-04T04:16:30.000Z" itemprop="datePublished" class="page-time">
+  2018-07-04
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#微信下-iOS-Android-全屏视频"><span class="post-toc-number">1.</span> <span class="post-toc-text">微信下 iOS Android 全屏视频</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#iOS"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">iOS</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Android"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">Android</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-微信下iOS和Android视频播放问题"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">微信下iOS和Android视频播放问题</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2018-07-04 12:16:30" datetime="2018-07-04T04:16:30.000Z"  itemprop="datePublished">2018-07-04</time>
+
+            
+
+
+            
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="微信下-iOS-Android-全屏视频"><a href="#微信下-iOS-Android-全屏视频" class="headerlink" title="微信下 iOS Android 全屏视频"></a>微信下 iOS Android 全屏视频</h1><p>在制作全屏视频需求时，你会发现 iOS、Android 在这一块多多少少都存在一些问题。</p>
+<h2 id="iOS"><a href="#iOS" class="headerlink" title="iOS"></a>iOS</h2><p>iOS 通过 <code>webkit-playsinline</code>、<code>playsinline</code> 实现内嵌全屏，不调用系统全屏，有必要的情况下配合 iphone-inline-video 库使用。<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">video</span> <span class="attr">src</span>=<span class="string">"video.mp4"</span> <span class="attr">webkit-playsinline</span> <span class="attr">playsinline</span>&gt;</span><span class="tag">&lt;/<span class="name">video</span>&gt;</span></div></pre></td></tr></table></figure></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/* 隐藏 iOS 视频的播放暂停按钮 */</span></div><div class="line"><span class="selector-tag">video</span><span class="selector-pseudo">::-webkit-media-controls-play-button</span>,</div><div class="line"><span class="selector-tag">video</span><span class="selector-pseudo">::-webkit-media-controls-start-playback-button</span> &#123;</div><div class="line">    <span class="attribute">opacity</span>: <span class="number">0</span>;</div><div class="line">    <span class="attribute">pointer-events</span>: none;</div><div class="line">    <span class="attribute">width</span>: <span class="number">5px</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="Android"><a href="#Android" class="headerlink" title="Android"></a>Android</h2><p>Android 除非你的域名下微信的白名单，否则你会面临两种选择：</p>
+<ol>
+<li>使用 X5 自建播放器</li>
+<li>隐藏导航条的全屏视频</li>
+</ol>
+<p>自建播放器就跟废的没两样，全屏偶尔还能用上，通过 x5-video-player-type=”h5”、x5-video-player-fullscreen=”true”可视频全屏，同时顶部的微信标题条也会消失，视频内会有一个全屏的 icon 按钮，退出全屏会使视频暂停<br><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">video</span> <span class="attr">src</span>=<span class="string">"video.mp4"</span> <span class="attr">x5-video-player-type</span>=<span class="string">"h5"</span> <span class="attr">x5-video-player-fullscreen</span>=<span class="string">"true"</span>&gt;</span><span class="tag">&lt;/<span class="name">video</span>&gt;</span></div></pre></td></tr></table></figure></p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2018-07-04T04:16:30.000Z" itemprop="dateUpdated">2018-07-04 12:16:30</time>
+</span>
+
+
+        
+        <footer>
+            <a href="https://rolitter.github.io" target="_blank">
+                <img src="/img/rolitter.jpg" alt="rolitter">
+                rolitter
+            </a>
+        </footer>
+    </div>
+    
+    
+</blockquote>
+
+        
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/video/">video</a></li></ul>
+
+
+            
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2018/07/04/css设置图片居中显示/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> 图片居中显示</div>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2018/07/04/geturl/" id="post-next" class="post-nav-link">
+        <div class="tips">获取URL中get的参数值 <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>rolitter &copy; 2017 - 2018</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: false, REWARD: false };
+
+
+</script>
+
+<script src="/js/main.min.js?v=1.7.2"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="/js/search.min.js?v=1.7.2" async></script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
